@@ -1,4 +1,5 @@
-export const BASE_URL = 'https://white-seahorse-266682.hostingersite.com/api/v1'
+export const ORIGIN = 'https://white-seahorse-266682.hostingersite.com'
+export const BASE_URL = '/api/v1'
 export const LANG = 'en' 
 export const CONTACT = { phone: '+201000000000', whatsapp: '201000000000' }
 
