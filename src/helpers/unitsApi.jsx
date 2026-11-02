@@ -3,10 +3,9 @@ export const LANG = 'en'
 export const CONTACT = { phone: '+201000000000', whatsapp: '201000000000' }
 
 export const pick = (o, k) => o?.[`${k}_${LANG}`] ?? o?.[k] ?? ''
-
 export const imgUrl = (i) => {
   const s = typeof i === 'string' ? i : i?.url || i?.path || ''
-  return !s ? '' : /^https?:/.test(s) ? s : `${BASE_URL.replace('/api/v1', '')}/${s.replace(/^\//, '')}`
+  return !s ? '' : /^https?:/.test(s) ? s : `${ORIGIN}/${s.replace(/^\//, '')}`
 }
 
 export const egp = (n) => `${Number(n || 0).toLocaleString()}EGP`
